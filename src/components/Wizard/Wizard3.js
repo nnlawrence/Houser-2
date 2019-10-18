@@ -53,7 +53,7 @@ class Wizard3 extends Component {
 
     render() {
         return (
-            <div>
+            <div className='wizard3'>
                 <div>Wizard Step Three</div>
                 <Link to='/'><button onClick={() => store.dispatch({type:'CANCEL'})}>Cancel</button></Link>
 

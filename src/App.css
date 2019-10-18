@@ -1,3 +1,51 @@
 .mapped {
+  width: 90%;
   border: 1px solid black;
+  text-align: center;
+  background: #dedede;
+}
+
+.header {
+  width: 100%;
+  background: #519872;
+  height: 60px;
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+
+.App {
+  background: #afdfc0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dashboard {
+  background: #e5f4ec;
+  width: 65%;
+}
+
+.wizard1 {
+  background: #e5f4ec;
+  width: 65%;
+  height: 90%;
+}
+
+.wizard1 > input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.wizard2 {
+  background: #e5f4ec;
+  width: 65%;
+  height: 90%;
+}
+
+.wizard3 {
+  background: #e5f4ec;
+  width: 65%;
+  height: 90%;
 }

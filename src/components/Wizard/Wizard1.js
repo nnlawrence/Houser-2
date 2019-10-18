@@ -61,7 +61,7 @@ class Wizard1 extends Component {
 
     render() { 
         return ( 
-            <div>
+            <div className='wizard1'>
                 <div>Wizard Step One</div>
                 <Link to='/'><button>Cancel</button></Link>
                 <label>Property Name: </label>

@@ -31,7 +31,7 @@ class Wizard2 extends Component {
 
     render() {
         return (
-            <div>
+            <div className='wizard2'>
                 <div>Wizard Step Two</div>
                 <Link to='/'><button onClick={() => store.dispatch({type:'CANCEL'})}>Cancel</button></Link>
                 <input placeholder='Image URL' value={this.state.img} onChange={ (e) => this.handleImgInput(e.target.value)} />
