@@ -9,7 +9,9 @@ function App() {
     <HashRouter>
     <div className="App">
       <Header />
+      <div className="test">
       { routes }
+      </div>
     </div>
     </HashRouter>
   );

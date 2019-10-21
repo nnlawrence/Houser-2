@@ -11,4 +11,9 @@ create table houses(
     'Metairie',
     'LA',
     '50004'
-)    
+)
+
+alter table houses
+add rent decimal,
+add mortgage decimal,
+add image varchar(999);

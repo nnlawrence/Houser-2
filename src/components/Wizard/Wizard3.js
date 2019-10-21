@@ -21,7 +21,8 @@ class Wizard3 extends Component {
             const reduxState = store.getState(); 
             this.setState({
                 mortgage: reduxState.mortgage, 
-                rent: reduxState.rent
+                rent: reduxState.rent,
+                image: reduxState.image
             })
         })
     };
@@ -37,9 +38,10 @@ class Wizard3 extends Component {
     };
     
     postHouse = () => {
-        const { redux, rent, mortgage } = this.state; 
-        const fullState = {...redux, rent, mortgage}
-        axios.post('/api/house', fullState)
+        const { redux, rent, mortgage, image } = this.state; 
+        const fullState = {...redux, rent, mortgage, image}
+        console.log(fullState)
+        axios.post('/api/houses', fullState)
             .then(() => {
                 this.clearInputs(); 
             }) 
@@ -57,9 +59,9 @@ class Wizard3 extends Component {
                 <div>Wizard Step Three</div>
                 <Link to='/'><button onClick={() => store.dispatch({type:'CANCEL'})}>Cancel</button></Link>
 
-                <input placeholder='monthly mortgage amount' name='mortgage' onChange={this.handleInputChange} value={this.state.mortgage}/>
+                <input placeholder='Monthly Mortgage' name='mortgage' onChange={this.handleInputChange} value={this.state.mortgage}/>
 
-                <input placeholder='desired monthly rent' name='rent' onChange={this.handleInputChange} value={this.state.rent}/>
+                <input placeholder='Monthly Rent' name='rent' onChange={this.handleInputChange} value={this.state.rent}/>
 
                 <Link to='/wizard/step2'><button onClick={() => store.dispatch({type: 'ADD_STEP3', payload:{componentState: this.state}})} >Previous Step</button></Link>
 

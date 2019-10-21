@@ -1,39 +1,81 @@
 .mapped {
   width: 90%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   background: #dedede;
+  /* margin: 5px; */
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 800px;
+}
+
+.mapped > button {
+  display: flex;
+  margin-left: 96.7%;
+  font-size: 16px;
 }
 
 .header {
   width: 100%;
   background: #519872;
-  height: 60px;
+  height: 75px;
   color: white;
-  font-weight: 800;
+  font-weight: 650;
   font-size: 30px;
   text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header > h1 {
+  /* margin-left: 25%; */
+  font: inherit;
+  margin: 10px;
+}
+
+.header > img {
+  margin-left: 25%;
 }
 
 .App {
   background: #afdfc0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashboard {
   background: #e5f4ec;
   width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wizard1 {
   background: #e5f4ec;
   width: 65%;
-  height: 90%;
+  height: 100vh;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .wizard1 > input {
   display: flex;
+  width: 30%;
   flex-direction: column;
   margin: 10px;
 }
@@ -41,11 +83,17 @@
 .wizard2 {
   background: #e5f4ec;
   width: 65%;
-  height: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .wizard3 {
   background: #e5f4ec;
   width: 65%;
-  height: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }

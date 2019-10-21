@@ -3,10 +3,10 @@ const initialState = {
     address: '', 
     city: '',
     state: '',
-    zip: 0,
-    img: '', 
-    mortgage: 0, 
-    rent: 0,
+    zip: '',
+    rent: '', 
+    mortgage: '',
+    image: '',
     houses: []
 }
 

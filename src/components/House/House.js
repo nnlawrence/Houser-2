@@ -7,16 +7,20 @@ class House extends Component {
     }
     render() { 
 
-        const { id, property_name, address, city, state, zip, } = this.props.houses
+        const { id, property_name, address, city, state, zip, rent, mortgage, image } = this.props.houses
 
         return ( 
             <div className='mapped'>
+                <button onClick={ () => this.props.deleteHouse(id) }>X</button>
                 <p>Property Name: {property_name}</p>
                 <p>Address: {address}</p>
                 <p>City: {city}</p>
                 <p>State: {state}</p>
                 <p>Zip: {zip}</p>
-                <button onClick={ () => this.props.deleteHouse(id) }>X</button>
+                <p>Rent: {rent}</p>
+                <p>Mortgage: {mortgage}</p>
+                <p>Image: </p>
+                <img src={image} alt='House' />
             </div>
          );
     }
